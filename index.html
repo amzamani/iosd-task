@@ -25,7 +25,7 @@
             flex-direction: column;
             font-family: 'Montserrat', sans-serif;
             height: 100vh;
-            margin: -20px 0 50px;
+            /* margin: -20px 0 50px; */
         }
 
         h1 {
@@ -94,8 +94,9 @@
         }
 
         input {
-            background-color: #eee;
+            background-color: rgb(245,255,250);
             border: none;
+            border-radius: 10px;
             padding: 12px 15px;
             margin: 8px 0;
             width: 100%;
@@ -108,7 +109,8 @@
                 0 10px 10px rgba(0, 0, 0, 0.22); */
             position: relative;
             overflow: hidden;
-            width: 768px;
+            width: 100%;
+            height: 100%;
             max-width: 100%;
             min-height: 480px;
         }
@@ -175,9 +177,9 @@
         }
 
         .overlay {
-            background: linear-gradient(90deg,#5e81f4,#1c67da);
-            background: linear-gradient(90deg,#5e81f4,#1c67da);
-            background: linear-gradient(90deg,#5e81f4,#1c67da);
+            background: linear-gradient(90deg, #5e81f4, #1c67da);
+            background: linear-gradient(90deg, #5e81f4, #1c67da);
+            background: linear-gradient(90deg, #5e81f4, #1c67da);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 0 0;
@@ -241,6 +243,26 @@
             width: 40px;
         }
 
+        section {
+            margin: 60px;
+        }
+
+        section h2 {
+            display: grid;
+            grid-gap: 15px;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            font-size: 30px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        section h2:before,
+        section h2:after {
+            content: '';
+            border-top: 1px solid #000;
+        }
+
         /* footer {
             background-color: #222;
             color: #fff;
@@ -252,7 +274,7 @@
             text-align: center;
             z-index: 999;
         } */
-/* 
+        /* 
         footer p {
             margin: 10px 0;
         }
@@ -285,25 +307,52 @@
                     <!-- <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a> -->
                 </div>
                 <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
+                <span style="align-self: flex-start;" >  &nbsp; Name</span>
+                <input type="email" placeholder="Enter name..." />
+                <br>
+                <span style="align-self: flex-start;" >  &nbsp; Email</span>
+                <input type="password" placeholder="Enter email..." />
+                <br>
+                <span style="align-self: flex-start;" >  &nbsp; Password</span>
                 <input type="password" placeholder="Password" />
+                <br>
+                <br>
                 <button>Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
             <form action="#">
-                <h1>Sign in</h1>
+                <h1>Hey There 👋 </h1>
+                <br>
+
+                Welcome back to Repsuite
+                <br>
+                <br>
+
+                
+                <hr>
+                <span style="align-self: flex-start;" >  &nbsp; Email</span>
+                <input type="email" placeholder="Enter email..." />
+                <br>
+                <span style="align-self: flex-start;" >  &nbsp; Password</span>
+                <input type="password" placeholder="Enter password..." />
+                <br>
+                <a href="#">Forgot your password?</a>
+                <a href="./dashboard.html"><button>Sign In</button></a>
+                <hr style="color: #000;">
+                <section id="design" class="wrapper">
+                    <hr>
+                    
+                    or sign-in with:
+                </section>
+                <style>
+
+                </style>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
                     <!-- <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a> -->
                 </div>
-                <span>or use your account</span>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <a href="#">Forgot your password?</a>
-                <button>Sign In</button>
             </form>
         </div>
         <div class="overlay-container">
@@ -311,12 +360,13 @@
                 <div class="overlay-panel overlay-left">
                     <h1>Welcome Back!</h1>
                     <p>To keep connected with us please login with your personal info</p>
-                    <button class="ghost" id="signIn">Sign In</button>
+                    <button class="ghost" id="signIn"  >Sign In</button>
+
                 </div>
                 <div class="overlay-panel overlay-right">
                     <h1>Hello, Friend!</h1>
                     <!-- <div style="height: 100px;width: 100px;"> -->
-                    <svg height="100" width="100" id="e2165270-d70d-4354-9ac9-1848d055b0c2" data-name="Layer 1"
+                    <svg height="500" width="500" id="e2165270-d70d-4354-9ac9-1848d055b0c2" data-name="Layer 1"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="971.44041"
                         height="662" viewBox="0 0 971.44041 662">
                         <defs>
