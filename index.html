@@ -321,7 +321,7 @@
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#">
+            <form method="get" action="dashboard.html" >
                 <h1>Hey There 👋 </h1>
                 <br>
 
@@ -338,7 +338,10 @@
                 <input type="password" placeholder="Enter password..." />
                 <br>
                 <a href="#">Forgot your password?</a>
-                <a href="./dashboard.html"><button>Sign In</button></a>
+                
+                    <button type="submit">Sign In</button>
+                
+                
                 <hr style="color: #000;">
                 <section id="design" class="wrapper">
                     <hr>
@@ -471,6 +474,7 @@
         const signUpButton = document.getElementById('signUp');
         const signInButton = document.getElementById('signIn');
         const container = document.getElementById('container');
+        
 
         signUpButton.addEventListener('click', () => {
             container.classList.add("right-panel-active");
